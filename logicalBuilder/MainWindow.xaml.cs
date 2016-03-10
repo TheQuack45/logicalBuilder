@@ -23,7 +23,6 @@ namespace logicalBuilder
         public MainWindow()
         {
             InitializeComponent();
-            // test
         }
     }
 }

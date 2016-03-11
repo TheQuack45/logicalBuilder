@@ -1,7 +1,7 @@
 ﻿<Window x:Name="mainWindow" x:Class="logicalBuilder.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Logical Builder" Height="500" Width="750">
+        Title="Logical Builder" Height="502" Width="752" SizeToContent="WidthAndHeight">
     <Window.Resources>
         <DataTemplate x:Key="logicGateListElementTemplate">
             <StackPanel Orientation="Vertical">
@@ -15,12 +15,26 @@
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" BorderBrush="Black">
             <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1">
                 <StackPanel Orientation="Vertical">
-                    <Image Source="C:\Users\Daniel\Pictures\andGate.gif"/>
+                    <Image Source="media/andGate.png"/>
                     <TextBlock Text="AND Gate"/>
                 </StackPanel>
             </ListBoxItem>
+            
+            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="media/nandGate.png"/>
+                    <TextBlock Text="NAND Gate"/>
+                </StackPanel>
+            </ListBoxItem>
+            
+            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1">
+                <StackPanel Orientation="Vertical">
+                    <Image Source="media/orGate.png"/>
+                    <TextBlock Text="OR Gate"/>
+                </StackPanel>
+            </ListBoxItem>
         </ListBox>
-        <Frame x:Name="displayFrame" Content="Frame" HorizontalAlignment="Stretch" Height="Auto" MinHeight="393" Margin="165,10,10,66" VerticalAlignment="Stretch" Width="Auto" MinWidth="567" BorderThickness="1" BorderBrush="Black"/>
+        <Frame x:Name="displayFrame" Content="Frame" HorizontalAlignment="Stretch" Height="Auto" MinHeight="392" Margin="165,10,10,66" VerticalAlignment="Stretch" Width="Auto" MinWidth="567" BorderThickness="1" BorderBrush="Black"/>
         <Button x:Name="runProgramButton" Content="Run" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="51" Height="51" BorderBrush="Black"/>
         <ListView x:Name="inputListView" Height="51" Width="Auto"  Margin="165,0,66,10" VerticalAlignment="Bottom" BorderBrush="Black">
             <ListView.View>

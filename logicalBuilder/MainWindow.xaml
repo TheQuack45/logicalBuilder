@@ -13,21 +13,21 @@
     <Grid>
         <ListBox x:Name="placeableItemsListBox" HorizontalAlignment="Left" Height="Auto" Margin="10,10,0,10" VerticalAlignment="Stretch" Width="150"
                  ScrollViewer.HorizontalScrollBarVisibility="Disabled" BorderBrush="Black">
-            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1">
+            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1" Name="AndGate">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/andGate.png"/>
                     <TextBlock Text="AND Gate"/>
                 </StackPanel>
             </ListBoxItem>
 
-            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1">
+            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1" Name="NandGate">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/nandGate.png"/>
                     <TextBlock Text="NAND Gate"/>
                 </StackPanel>
             </ListBoxItem>
 
-            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1">
+            <ListBoxItem BorderBrush="Black" BorderThickness="0,0,0,1" Name="OrGate">
                 <StackPanel Orientation="Vertical">
                     <Image Source="media/orGate.png"/>
                     <TextBlock Text="OR Gate"/>
